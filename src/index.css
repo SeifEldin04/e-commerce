@@ -1,0 +1,261 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+  --font-family: 'Encode Sans Expanded', sans-serif;
+  --rating-color: #ffc908;
+  --mdFontSize: 20px
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.product {
+  transition: all 0.3s;
+}
+
+.product:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+
+.category {
+  transition: all 0.3s;
+}
+
+.category:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+
+.brand {
+  transition: all 0.3s;
+}
+
+.brand:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+
+/* .product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+} */
+
+/* .product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+
+} */
+
+.product .myBtn1 {
+  color: var(--main-color);
+  transition: all 0.5s;
+}
+
+.product .myBtn1:hover {
+  border: solid 1px var(--main-color);
+}
+
+.product .myBtn2 {
+  color: rgb(189, 2, 2);
+  transition: all 0.5s;
+}
+
+.product .myBtn2:hover {
+  border: solid 1px rgb(189, 2, 2);
+}
+
+.vh-50{
+  height: 50vh;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: var(--mdFontSize);
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border: solid #d7d7d7 1px;
+  border-radius: 6px;
+}
+
+input:focus {
+  transform: scale(1.03);
+  transition: transform 0.3s;
+  border: solid var(--main-color) 1px;
+}
+
+.networkStatus {
+  background-color: #fff;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 25px;
+  font-weight: bolder;
+  z-index: 999999;
+  box-shadow: var(--shadow);
+}
+
+.mainSlider:focus {
+  border: none;
+  outline: none;
+}
+
+.categorySlider {
+  border: none;
+  outline: none;
+}
+
+.borderMain {
+  border: solid 1px var(--main-color);
+  border-radius: 8px;
+}
+
+.user {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--main-color);
+  transition: background-color 0.4s;
+}
+
+.user:hover {
+  background-color: var(--main-color);
+}
+
+.myBg {
+  /* background-color: rgba(215, 215, 215 , 0.5); */
+  background: var(--light-color);
+}
+
+#NumberProductsCart {
+  position: relative;
+}
+
+#NumberProductsCart h6 {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: var(--main-color);
+  color: #fff;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  font-weight: bolder;
+}
+
+.footer {
+  background: var(--light-color);
+}
+
+.profile {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profBrdr {
+  border: 1px solid var(--main-color);
+  width: 75%;
+  border-radius: 30px;
+}
+
+.iconUser {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.orders {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ordersBrdr{
+  border: 1px solid var(--main-color);
+  width: 60%;
+  border-radius: 30px;
+}
+
+.specBrand{
+  /* width: 300px; */
+  /* height: 300px; */
+  background-color: #fff;
+  color: #000;
+  position: fixed;
+  left: 50%;
+  top: -120%;
+  transform: translateX(-50%);
+  border: 1px gray solid;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.iconBtn{
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.closeBtn{
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+/* #brand{
+  background-color: #682424 !important;
+} */
